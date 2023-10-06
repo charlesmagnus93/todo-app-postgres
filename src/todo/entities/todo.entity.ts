@@ -1,6 +1,7 @@
 import { User } from "src/auth/entities/user.entity";
-import { BaseEntity, Column, CreateDateColumn, ManyToOne, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
+import { BaseEntity, Column, CreateDateColumn, Entity, ManyToOne, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
 
+@Entity()
 export class Todo extends BaseEntity {
 
     @PrimaryGeneratedColumn('uuid')

@@ -1,5 +1,6 @@
-import { BaseEntity, Column, CreateDateColumn, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
+import { BaseEntity, Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
 
+@Entity()
 export class UserInfo extends BaseEntity {
 
     @PrimaryGeneratedColumn('uuid')

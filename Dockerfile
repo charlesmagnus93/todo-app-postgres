@@ -5,13 +5,13 @@ FROM node:18-alpine
 WORKDIR /app
 
 # Copying file into APP directory of docker
-COPY ./package.json ./package-lock.json /app/
+COPY package*.json ./
 
 # Then install the NPM module
 RUN npm install
 
 # Copy current directory to APP folder
-COPY . /app/
+COPY . .
 
 EXPOSE 3000
 
